@@ -1,88 +1,110 @@
 import {
   ArrowRight,
   ExternalLink,
+  Github,
   Link2,
   PhoneCall,
-  LayoutTemplate,
+  School,
+  Clapperboard,
   Terminal,
   Server,
   Lock,
   Microscope,
 } from "lucide-react";
 
+// Replace the two placeholder live URLs below with your real Vercel links.
 const projects = [
   {
     id: 1,
-    title: "UTTM — Link Management SaaS",
+    title: "VELUNE — AI Cinematic Story Platform",
     description:
-      "A multi-tenant URL shortening and link management SaaS I built end-to-end: short URLs & QR codes, marketing campaigns, role-based access control, per-org branding, and a plan/billing system.",
-    icon: Link2,
-    accent: "#7C9CFF",
-    tags: ["React", "NestJS", "MongoDB", "RBAC"],
-    demoUrl: null,
-    note: "Private client codebase",
+      "A full stack AI roleplay web app where users play interactive cinematic stories driven by an LLM API. FastAPI backend, Next.js frontend, separate admin and user experiences, and an admin panel for publishing stories.",
+    icon: Clapperboard,
+    accent: "#E879A8",
+    tags: ["FastAPI", "Next.js", "LLM API", "Agentic AI"],
+    liveUrl: "https://YOUR-VELUNE-LINK.vercel.app",
+    codeUrl: null,
   },
   {
     id: 2,
+    title: "Task Manager (Nivora)",
+    description:
+      "A multi-tenant team task management platform: FastAPI backend with JWT auth, role-based access control with custom roles, teams, projects, tasks and a dashboard, paired with a Next.js frontend. Deployed on Vercel.",
+    icon: Server,
+    accent: "#6FCF97",
+    tags: ["FastAPI", "PostgreSQL", "JWT", "RBAC", "Next.js"],
+    liveUrl: "https://YOUR-NIVORA-FRONTEND-LINK.vercel.app",
+    codeUrl: "https://github.com/RishavMidnightCoder/FastAPI-Backend-Python-",
+  },
+  {
+    id: 3,
+    title: "Sivora — School ERP Platform",
+    description:
+      "Core team member on a multi-tenant school ERP used by 15+ active schools. Built FastAPI APIs and Angular workflows across Finance & Fees, Accounts, Student Information, Academics, and Front Office, plus OTP login and an agentic AI parent-calling feature.",
+    icon: School,
+    accent: "#F2B14C",
+    tags: ["FastAPI", "PostgreSQL", "Angular", "Agentic AI"],
+    liveUrl: null,
+    codeUrl: null,
+    note: "Private company codebase",
+  },
+  {
+    id: 4,
+    title: "UTTM — Link Management SaaS",
+    description:
+      "A multi-tenant URL shortening and campaign-management SaaS I built end-to-end: short URLs & QR codes, email/OTP authentication, role-based access control, user invitations, and subscription-based feature limits.",
+    icon: Link2,
+    accent: "#7C9CFF",
+    tags: ["React", "NestJS", "MongoDB", "RBAC"],
+    liveUrl: null,
+    codeUrl: null,
+    note: "Private client codebase",
+  },
+  {
+    id: 5,
     title: "Agentic AI Voice Calling Platform",
     description:
       "An agentic AI voice-calling platform for automated loan/EMI repayment collections — Gemini API integration for real-time token-by-token call responses, plus role-based employee and manager dashboards.",
     icon: PhoneCall,
     accent: "#5FD9A0",
     tags: ["React", "NestJS", "Gemini API", "Agentic AI"],
-    demoUrl: null,
+    liveUrl: null,
+    codeUrl: null,
     note: "Private client codebase",
   },
   {
-    id: 3,
-    title: "Multi-Site CMS Platform",
-    description:
-      "Delivered multiple country-specific websites on a single Payload CMS backend for a US-based client, building the Next.js frontend and CMS collections wired into the pages.",
-    icon: LayoutTemplate,
-    accent: "#F2B14C",
-    tags: ["Next.js", "Payload CMS", "Strapi"],
-    demoUrl: null,
-    note: "Private client codebase",
-  },
-  {
-    id: 4,
+    id: 6,
     title: "LLM Terminal CLI",
     description:
       "A Node.js terminal chat assistant powered by the Groq SDK and Llama 3.3 70B, with MongoDB-backed persistent memory and streaming responses, plus a companion Next.js chat frontend with SSE streaming and voice input.",
     icon: Terminal,
     accent: "#C792EA",
     tags: ["Node.js", "Groq/Llama", "Next.js", "SSE"],
-    demoUrl: "https://github.com/RishavMidnightCoder/llm-terminal-ui",
+    liveUrl: null,
+    codeUrl: "https://github.com/RishavMidnightCoder/llm-terminal-ui",
   },
   {
-    id: 5,
-    title: "Task Manager API (FastAPI)",
-    description:
-      "A FastAPI backend built to explore Python's ecosystem coming from a NestJS background — JWT auth, PostgreSQL, and a module-per-feature folder structure.",
-    icon: Server,
-    accent: "#6FCF97",
-    tags: ["FastAPI", "PostgreSQL", "JWT"],
-    demoUrl: "https://github.com/RishavMidnightCoder/FastAPI-Backend-Python-",
-  },
-  {
-    id: 6,
+    id: 7,
     title: "File Vault: Secure & Decentralized File Storage",
     description:
       "A capstone project providing a secure, decentralized file storage solution designed to ensure data privacy, integrity, and accessibility.",
     icon: Lock,
     accent: "#EF7C6B",
     tags: ["Access Control", "AES", "Blockchain"],
-    demoUrl: "https://github.com/RishavMidnightCoder/File-Vault",
+    liveUrl: null,
+    codeUrl: "https://github.com/RishavMidnightCoder/File-Vault",
   },
   {
-    id: 7,
+    id: 8,
     title: "ML-Based Skin Detection Techniques",
     description:
       "A machine learning pipeline using Scikit-learn, OpenCV, and PyTorch (SVM and CNN models) to detect and classify skin regions in images.",
     icon: Microscope,
     accent: "#4FC3D9",
     tags: ["Machine Learning", "PyTorch", "OpenCV"],
-    demoUrl: "https://github.com/RishavMidnightCoder/Ml-based-skin-detection-technique",
+    liveUrl: null,
+    codeUrl:
+      "https://github.com/RishavMidnightCoder/Ml-based-skin-detection-technique",
   },
 ];
 
@@ -96,14 +118,15 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          A mix of professional platforms built at Wesoftek Solutions and
-          personal projects, spanning full-stack SaaS, agentic AI, and
-          machine learning.
+          A mix of professional platforms built at Cloudwave Services and
+          Wesoftek Solutions and personal projects, spanning Python/FastAPI
+          backends, full-stack SaaS, agentic AI, and machine learning.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => {
             const Icon = project.icon;
+            const hasLinks = project.liveUrl || project.codeUrl;
             return (
               <div
                 key={project.id}
@@ -141,18 +164,30 @@ export const ProjectsSection = () => {
                     ))}
                   </div>
 
-                  <div className="flex justify-between items-center pt-2 border-t border-border/50">
-                    {project.demoUrl ? (
+                  <div className="flex items-center gap-5 pt-2 border-t border-border/50">
+                    {project.liveUrl && (
                       <a
-                        href={project.demoUrl}
+                        href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
                       >
                         <ExternalLink size={16} />
+                        Live demo
+                      </a>
+                    )}
+                    {project.codeUrl && (
+                      <a
+                        href={project.codeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={16} />
                         View code
                       </a>
-                    ) : (
+                    )}
+                    {!hasLinks && (
                       <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
                         <Lock size={14} />
                         {project.note || "Not publicly available"}
