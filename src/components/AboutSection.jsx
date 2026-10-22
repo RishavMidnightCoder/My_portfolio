@@ -12,26 +12,26 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Full Stack Software Engineer
+              Python Full Stack Software Engineer
             </h3>
 
             <p className="text-muted-foreground">
-              I'm a Full Stack Software Engineer at Wesoftek Solutions, building
-              production web apps and AI-integrated platforms with React,
-              Next.js, NestJS, and Python. I enjoy architecting systems
-              end-to-end — from multi-tenant SaaS backends to real-time AI
-              voice platforms — that are clean, scalable, and genuinely
-              useful to the people who use them.
+              I'm a Software Engineer at Cloudwave Services, building
+              production web platforms and AI-integrated products with Python
+              (FastAPI), PostgreSQL, Angular, React, and Next.js. I'm part of
+              the core team behind a multi-tenant school ERP used by 15+
+              active schools, and I enjoy owning features end-to-end — from
+              REST APIs and databases to clean, responsive frontends that are
+              genuinely useful to the people who use them.
             </p>
 
             <p className="text-muted-foreground">
-              My day-to-day stack spans React.js, Next.js, NestJS, Node.js,
-              Python/Django, MongoDB, PostgreSQL, and MySQL, along with
-              headless CMS platforms like Strapi and Payload. I've also
-              worked hands-on with AWS deployments for both US and
-              India-based clients, and with GenAI integration — from
-              Groq/Llama-powered tools to Gemini-driven real-time voice
-              agents.
+              My day-to-day stack spans Python/FastAPI, PostgreSQL, Angular,
+              React.js, Next.js, TypeScript, NestJS, and Node.js, along with
+              MongoDB and MySQL. I've worked hands-on with AWS deployments for
+              US and India-based clients, and with GenAI integration — from
+              agentic AI calling and chatbot features to Gemini-driven
+              real-time voice agents and Groq/Llama-powered tools.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -56,11 +56,14 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Full-Stack & Cloud Development</h4>
+                  <h4 className="font-semibold text-lg">
+                    Python Backend & Full-Stack Development
+                  </h4>
                   <p className="text-muted-foreground">
-                    Design and ship production-grade web apps end-to-end
-                    using React, Next.js, NestJS, and Python, with hands-on
-                    AWS deployment experience for US and India-based clients.
+                    Design and ship production-grade apps end-to-end with
+                    FastAPI, PostgreSQL, Angular, and Next.js — from REST APIs
+                    and JWT/OTP authentication to responsive frontends, with
+                    AWS and Vercel deployments.
                   </p>
                 </div>
               </div>
@@ -71,11 +74,14 @@ export const AboutSection = () => {
                   <Sparkles className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">GenAI & Agentic AI Integration</h4>
+                  <h4 className="font-semibold text-lg">
+                    GenAI & Agentic AI Integration
+                  </h4>
                   <p className="text-muted-foreground">
-                    Built agentic AI systems including a real-time voice
-                    calling platform (Gemini API, token-by-token streaming)
-                    and a terminal-based LLM assistant with persistent memory.
+                    Building an agentic AI calling system for schools, an AI
+                    website assistant, and VELUNE, an LLM-powered cinematic
+                    story platform — plus a Gemini-driven voice-calling
+                    platform with token-by-token streaming.
                   </p>
                 </div>
               </div>
@@ -87,11 +93,13 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Multi-Tenant SaaS Architecture</h4>
+                  <h4 className="font-semibold text-lg">
+                    Multi-Tenant SaaS Architecture
+                  </h4>
                   <p className="text-muted-foreground">
-                    Owned UTTM.in end-to-end — a URL shortening and link
-                    management SaaS platform with role-based access control,
-                    multi-tenant dashboards, and plan/billing enforcement.
+                    Core team member on a multi-tenant school ERP (15+ schools)
+                    and owner of UTTM.in, a URL shortening SaaS — both with
+                    role-based access control and tenant-aware dashboards.
                   </p>
                 </div>
               </div>
