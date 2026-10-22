@@ -3,19 +3,30 @@ import { motion } from "framer-motion";
 const experience = [
   {
     id: 1,
-    title: "Full Stack Software Engineer",
-    company: "Wesoftek Solutions",
-    year: "Present", // TODO: replace with your actual start date
+    title: "Software Engineer",
+    company: "Cloudwave Services Pvt. Ltd.",
+    year: "Jun 2026 – Present · Remote",
     description: [
-      "Own UTTM end-to-end — a multi-tenant URL shortening & link management SaaS with role-based access control, plan/billing enforcement, and per-org theming.",
-      "Built the frontend and Gemini API integration for an agentic AI voice-calling platform used for automated loan/EMI repayment collections, including real-time token-by-token response streaming and role-based employee/manager dashboards.",
-      "Delivered a multi-site platform on a single Payload CMS backend for a US-based client, building the Next.js frontend and CMS collections/config for multiple country-specific sites.",
-      "Led a separate client project (Next.js + Strapi CMS), including a location-based site-switcher and full CMS documentation for non-technical stakeholders.",
+      "Core team member on the company's flagship multi-tenant school ERP used by 15+ active schools, owning features end to end with Python (FastAPI), PostgreSQL, Angular, and TypeScript across Finance & Fees, Accounts, Student Information, Academics, School Website, and Front Office modules.",
+      "Developed FastAPI REST APIs and service layers with Angular workflows for fee collection, transactions, due slips, timetables, admission enquiries, and visitor and gate-pass management.",
+      "Building an agentic AI calling feature that places automated calls to parents for fee due-date reminders, ID card updates, and school notifications, and implementing passwordless login by migrating from email and password to email OTP and mobile number OTP.",
+      "Sole developer of the company's corporate website using Next.js, Strapi CMS, and PostgreSQL, with an integrated agentic AI \"Talk to Expert\" chatbot that explains services, answers visitor queries, and handles work requests.",
     ],
-    tags: ["React", "Next.js", "NestJS", "Node.js", "MongoDB", "AWS", "GenAI"],
+    tags: ["Python", "FastAPI", "PostgreSQL", "Angular", "Next.js", "Agentic AI"],
   },
   {
     id: 2,
+    title: "Software Engineer (Full Stack)",
+    company: "Wesoftek Solutions Pvt. Ltd.",
+    year: "Dec 2025 – May 2026 · Gurgaon, Haryana (On-site)",
+    description: [
+      "Developed the React.js frontend and integrated NestJS REST APIs for an AI-assisted loan-repayment platform, with role-based employee and manager dashboards tracking EMI status, call outcomes, payment commitments, and follow-ups, plus token-streamed Gemini API responses powering an agentic AI voice-calling system.",
+      "Independently built UTTM, a multi-tenant URL-shortening and campaign-management platform with React.js and NestJS, featuring short URLs, QR codes, email/OTP authentication, Swagger-documented REST APIs, role-based access control, user invitations, and subscription-based feature limits.",
+    ],
+    tags: ["React", "NestJS", "Node.js", "MongoDB", "AWS", "Gemini API"],
+  },
+  {
+    id: 3,
     title: "Web Development Intern",
     company: "INTERNPE",
     year: "Jan 2024 – Feb 2024",
@@ -37,9 +48,10 @@ export const InternshipsSection = () => {
           My <span className="text-primary">Experience</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          From building production platforms at Wesoftek Solutions to early
-          internships, here's where I've applied my skills in real-world
-          projects and gained hands-on industry experience.
+          From building production platforms at Cloudwave Services and
+          Wesoftek Solutions to early internships, here's where I've applied
+          my skills in real-world projects and gained hands-on industry
+          experience.
         </p>
         {/* Vertical timeline line */}
         <div className="absolute left-4 top-32 bottom-0 w-px bg-gradient-to-b from-purple-600/50 to-transparent"></div>
